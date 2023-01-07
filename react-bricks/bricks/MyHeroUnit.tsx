@@ -4,7 +4,7 @@ import { Text, RichText, Image, types } from 'react-bricks/frontend'
 //=============================
 // Local Types
 //=============================
-type Padding = 'big' | 'small'
+type Padding = 'big' | 'small' | 'medium'
 
 interface HeroUnitProps {
   padding: Padding
@@ -72,7 +72,7 @@ MyHeroUnit.schema = {
   getDefaultProps: () => ({
     padding: 'big',
     title: 'This is a custom Hero U\nnit',
-    text: "We are a hi-tech web development company committed to deliver great products on time. We love to understand our customers' needs and exceed expectations.",
+    text: "Let's build it",
   }),
   sideEditProps: [
     {
@@ -84,6 +84,7 @@ MyHeroUnit.schema = {
         options: [
           { value: 'big', label: 'Big Padding' },
           { value: 'small', label: 'Small Padding' },
+          { value: 'medium', label: 'Medium Padding'},
         ],
       },
     },

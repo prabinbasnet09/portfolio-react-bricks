@@ -13,8 +13,8 @@ const config: types.ReactBricksConfig = {
   logo: '/logo.svg',
   previewPath: '/preview',
   // contentClassName: 'content', // Defined dynamically
-  // isDarkColorMode: ...,        // in _app.tsx
-  // toggleColorMode: ...,        // to manage Dark Mode
+  // isDarkColorMode: true,        // in _app.tsx
+  // toggleColorMode: () => !isDarkColorMode,        // to manage Dark Mode
   renderLocalLink: NextLink,
   navigate: (path: string) => Router.push(path),
   loginPath: '/admin',
